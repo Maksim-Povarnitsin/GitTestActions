@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ITSK.AzimuthPT.JsonFlowReader.Service-8442317E-AF6B-47E6-A264-A134D0F2A79C</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\mpovarnicin\.nuget\packages\nlog.config\4.7.15\contentFiles\any\any\NLog.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ITSK.COUB.Bus" Version="6.4.0" />
+    <PackageReference Include="ITSK.COUB.Utils" Version="6.23.0" />
+    <PackageReference Include="ITSK.COUB.WeblessUtils" Version="6.3.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ITSK.AzimuthPT.GetJsonMsgFlow.Lib">
+      <HintPath>..\..\..\..\..\..\GitLab\itsk\azimuthpt\main\itsk-azimuthpt-allprojects\ITSK.AzimuthPT.GetJsonMsgFlow.Lib\ITSK.AzimuthPT.GetJsonMsgFlow.Lib\bin\Debug\net6.0\ITSK.AzimuthPT.GetJsonMsgFlow.Lib.dll</HintPath>
+    </Reference>
+    <Reference Include="ITSK.PMPTP.Objects">
+      <HintPath>..\..\..\..\..\..\GitLab\itsk\azimuthpt\main\itsk-azimuthpt-allprojects\ITSK.AzimuthPT.GetJsonMsgFlow.Lib\ITSK.AzimuthPT.GetJsonMsgFlow.Lib\bin\Debug\net6.0\ITSK.PMPTP.Objects.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+</Project>
